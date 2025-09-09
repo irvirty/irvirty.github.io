@@ -1,4 +1,4 @@
-/* Main.css style v.23.8.6
+/* Main.css style v.23.9.0
 /* main.css + theme (auto.css) */
 /* The style is mostly based on classes */
 
@@ -247,6 +247,29 @@ margin: 1px;
 align-content: start;
 align-self: start;
 flex-grow: 1;
+}
+
+.logo, .logo2{
+position: relative;
+border-radius: 50%;
+display: inline-flex;
+vertical-align: middle;
+text-align: center;
+padding: 1px;
+border: 2px dashed color-mix(in srgb, var(--brand) 50%, transparent);
+opacity: 1;
+transition: transform .250s ease-in-out;
+}
+
+.logo:hover, .logo2:hover{
+transform: rotate(360deg);
+transition: transform 1.5s ease-in-out;
+}
+
+.logo2 { width: 26px; height: 26px; }
+
+@media (prefers-reduced-motion) {
+.logo:hover, .logo2:hover{ border-color: var(--c); }
 }
 
 .keepTag,

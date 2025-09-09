@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Irvirty Search Redirect (Neocities)</title>
+
+<meta name="description" content="Search for sites hosted on the Neocities hosting platform using redirects to another search engine.">
+<meta name="keywords" content="search, redirect,">
+
+<link rel="alternate" type="application/rss+xml" title="Website RSS" href="/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="Website RSS 2" href="https://neocities.org/site/irvirty.rss">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="color-scheme" content="light dark">
+<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+
+<link rel="icon" sizes="512x512" href="..//img/logo.png" type="image/png">
+<link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon">
+
+
+<!-- main -->
+<link rel="preload" href="../js/main.js" as="script">
+
+<link rel="preload" href="../css/main.css" as="style">
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<link rel="preload" href="../css/auto.css" as="style">
+<link rel="stylesheet" type="text/css" href="../css/auto.css" id="theme">
+
+<link rel="preload" href="../css/style.css" as="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+
+<noscript>
+<link rel="stylesheet" type="text/css" href="../css/noscript.css">
+</noscript>
+<!-- // main -->
+
+<!--<link rel="preload" href="/js/script.js" as="script"> -->
+
+
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+
+<!-- Navigation HTML v.1.0.1 -->
+<header>
+<div class="wrapper3">
+<div class="margin2"></div>
+
+<div id="topNav" class="topNav">
+<nav>
+
+<!-- /* Skip navigation: .screenReader (in main.css) + id="content" */ -->
+<a class="screenReader inlineBlock padding brand" tabindex="0" href="#content">Skip navigation</a>
+<a class="inlineBlock padding" style="padding-left: 0;" tabindex="0" href="../" title="index / nav 1"><img class="logo2 reduceLight" src="..//img/logo.png" alt="logo" style="max-width: 26px;"></a> 
+
+<span id="navMenu" class="navMenu">
+<!-- links in nav -->
+<a class="countMenuItem active2 navMenuActive inlineBlock padding empty" tabindex="0" href="../search/" title="Search">Search</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../pages/about/" title="About">About</a>
+<!-- // links in nav -->
+</span>
+
+<div class="dropdownMenuContentWrapper navMenu2">
+<div class="dropdownMenuContent">
+
+<a id="dropdownMenuButton" class="dropdownMenuButton inlineBlock padding mClassNavUp brand borderBottomTransparent" tabindex="0" href="#" onclick="fuMDropdownButton();return false;">☰ Menu</a>
+
+<div id="dropdownMenu" class="dropdownMenu">
+<div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
+<!-- links for show in dropdown (duplicate) -->
+<a class="countMenuItem active2 navMenuActive inlineBlock padding empty" tabindex="0" href="../search/" title="Search">Search</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../pages/about/" title="About">About</a>
+<!-- // links for show in dropdown (duplicate) -->
+<hr>
+<a class="noscriptHide block w100 tCenter padding brand small" href="#" onclick="fuMDropdownButtonClose();return false;" title="Close menu">close</a>
+</div>
+</div>
+
+</div>
+</div>
+
+<!--
+<a class="inlineBlock padding mClassNavUp brand borderBottomTransparent" tabindex="0" href="../" title="../ (Up)">List (up)</a>
+
+<form class="noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/pages/site-search.html" role="search">
+<input id="siteSearch" type="search" placeholder="site search" name="q" autocomplete="off">
+</form>-->
+
+</nav>
+</div>
+
+</div>
+</header>
+<!-- // Navigation HTML -->
+
+<!--<hr>-->
+
+
+<div id="topHeader">
+<div class="tCenter">
+<a href="../img/logo.png"><img class="logo reduceLight" src="../img/logo.png" width="60" height="60" alt="logo"></a>
+</div><h1 class="h2 tCenter op insertIconTitle zero padding">Irvirty Search Redirect (Neocities)</h1>
+<!--<div class="tCenter margin2List smaller op">Search for sites hosted on the Neocities hosting.</div>-->
+
+<div class="margin2 padding2"></div>
+</div>
+
+<!-- content -->
+<div id="content"></div>
+<main id="searchPage" class="contentCenter">
+
+<!-- dublicate -->
+<!-- search -->
+<div id="form" class="wrapper">
+
+<!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
+<form method="GET" action="./" autocomplete="off" role="search">
+<!--<form method="GET" action="https://neocities.org/browse/search" autocomplete="off" role="search">-->
+<label class="block op tLeft small" for="q"><span class="bold green">✪</span> <b>Neocities</b> search (redirect, random):</label>
+<input id="q" class="borderRadius" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
+
+<!--<input type="hidden" name="sort_by" value="random">-->
+<div class="searchButtons">
+<!--<input class="searchButtonsItem smaller op tCenter submit borderRadius" type="submit" value="Neocities" title="text neo">-->
+<input class="searchButtonsItem smaller op tCenter submit borderRadius" type="submit" title="text rse (random search engine)" value="Search">
+<!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
+<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="neo" type="submit" title="text neo">Neocities</button>
+<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="goo" type="submit" title="text goo">Google</button>
+<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="bin" type="submit" title="text bin">Bing</button>
+<!--<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="mar" type="submit" title="text mar">Marginalia</button>
+<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="sez" type="submit" title="text sez">Seznam</button>-->
+<!--<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="sez" type="submit" title="text moj">Mojeek</button>-->
+<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="q" type="submit" title="text glo or q">Global</button>
+<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="l" type="submit" title="text l (first search result)">I'm Feeling Lucky</button>
+<!--<input  class="searchButtonsItem smaller op tCenter" type="submit" name="q2" value="l">-->
+</div>
+
+</form>
+
+<div class="margin"></div>
+<span id="seachButtons"></span>
+
+<div class="margin"></div>
+<div class="gcse-searchresults-only"></div>
+
+
+<!--<div class="padding3List"></div>
+<div class="tRight small gray">* Spaces are removed</div>-->
+
+</div>
+<!-- // search -->
+
+<div class="margin3 padding3"></div>
+
+<div class="wrapper">
+<div id="speedDialPrint"></div>
+</div>
+
+
+</main>
+<!--// content -->
+
+
+
+<div class="wrapper3">
+<footer id="footer"></footer>
+</div>
+
+<script>
+var confD = "../";
+</script>
+<script src="../js/main.js"></script>
+
+
+<script src="script.js"></script>
+
+<script>
+//fuMSetTheme('rand-l');
+</script>
+
+</body>
+</html>

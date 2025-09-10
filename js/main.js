@@ -1,4 +1,4 @@
-// Main.js v.1.3.3
+// Main.js v.1.3.4
 
 if (confD == undefined) { var confD = "/"; }
 
@@ -516,8 +516,8 @@ if (conf["confBg"] == "on"){
 bgImage = fuMClearText(bgImage);
 
 if (bgImage == undefined||bgImage == null||bgImage == ""){
-let mBg = fuMRandomItem("binary.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
-let mBgDark = fuMRandomItem("binary-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
+let mBg = fuMRandomItem("circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
+let mBgDark = fuMRandomItem("circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 if (conf["confThemeEmbed"] == 'light'||com == "light"){

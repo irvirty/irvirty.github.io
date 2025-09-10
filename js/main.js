@@ -359,10 +359,16 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" title="Social" href="https://bsky.app/profile/${conf["confUsername"]}.pages.dev">Bluesky</a>
 <!--<a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="${confD}pages/settings/">Settings</a>-->
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
+
+<a class="brand inlineBlock padding" rel="license" title="Home page (Cloudflare)" href="https://${conf["confUsername"]}.pages.dev/">Cloudflare Page</a>
+
+<a class="brand inlineBlock padding" rel="license" title="Hom page 2 (Neocities)" href="https://${conf["confUsername"]}.neocities.org/">Neocities Page</a>
+
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <span class="gray">License:</span>
 <a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 <span class="op inlineBlock padding gray" title="update">2025</span>
+<br>
 <span class="gray">Hosting:</span> <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://pages.github.com/">GitHub Pages</a>
 
 </div>

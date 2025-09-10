@@ -2,7 +2,7 @@
   
 # GitHub Page
 
-### Page with one picture, art, drawing.
+#### Page with one picture (art, drawing).
   
 ---
    

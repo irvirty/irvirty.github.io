@@ -15,8 +15,6 @@ Page with one picture (art, drawing).
 ```
 Main license: CC BY-SA 4.0.
 
-Resources and others:
-Roboto font: Copyright 2025 Google Apache License, Version 2.0
 ```
 
 ---

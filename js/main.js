@@ -316,8 +316,6 @@ fDescTitle = `<span class="inlineBlock xSmall">Description: <span class="xSmall"
 }
 }
 
-//fuMInsertHtml("#footer", 'beforeend', ``);
-
 if (document.getElementById("footer") != null){
 document.getElementById("footer").innerHTML = `
 
@@ -394,7 +392,6 @@ mFooterNavLinksPrint += ` <span class="gray">/</span> <a class="brand" href="${m
 }
 });
 
-//fuMInsertHtml("#footerNav", '', mFooterNavLinksPrint);
 if (document.getElementById("footerNav") != null){
 document.getElementById("footerNav").innerHTML = mFooterNavLinksPrint;
 }
@@ -459,39 +456,6 @@ return randomItemsArrList[fuMRandom(0, Number(randomItemsArrList.length - 1))];
 
 
 
-function fuMInsertHtml(selector, option, text){
-//https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
-//option: beforebegin, afterbegin, beforeend, afterend
-
-if (option == "head"){
-if (document.head != null){
-if (option != undefined&&option != ''){
-document.head.insertAdjacentHTML(option, text);
-//alert(opition + 'test');
-} else {
-document.head.insertAdjacentHTML("beforeend", text);
-//alert(option + 'test2');
-}
-} else { console.log("fuMInsertHtml: document head probably null"); }
-
-} else {
-
-if (document.querySelector(selector) != null){
-if (option != undefined&&option != ''){
-document.querySelector(selector).insertAdjacentHTML(option, text);
-//alert(opition + 'test');
-} else {
-document.querySelector(selector).insertAdjacentHTML('beforeend', text);
-//alert(option + 'test2');
-}
-} else { console.log("fuMInsertHtml: querySelector probably null"); }
-
-}
-
-}
-
-
-
 function fuMSplit(text, delimiter){
 if (delimiter == null||delimiter == ""){
 delimiter = ["|", ",", " ", "\r\n", "\r", "\n"];
@@ -521,8 +485,7 @@ let mBgDark = fuMRandomItem("circle-d.svg line-chaotic-d.svg deco-paper-d.svg wo
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 if (conf["confThemeEmbed"] == 'light'||com == "light"){
-//document.head.insertAdjacentHTML("beforeend", `
-fuMInsertHtml("head", 'beforeend', `
+document.head.insertAdjacentHTML("beforeend", `
 <style>
 /*.reduceLight { filter: brightness(100%); }*/
 body{
@@ -534,8 +497,7 @@ background-attachment: fixed;
 </style>
 `);
 } else {
-//document.head.insertAdjacentHTML("beforeend", `
-fuMInsertHtml("head", 'beforeend', `
+document.head.insertAdjacentHTML("beforeend", `
 <style>
 /*.reduceLight { filter:brightness(70%); }*/
 body{
@@ -552,8 +514,7 @@ let reduceBgLight = "";
 if (conf["confThemeEmbed"] == 'dark'||com == "dark"){
 reduceBgLight = "filter:brightness(60%);";
 }
-//document.head.insertAdjacentHTML("beforeend", `
-fuMInsertHtml("head", 'beforeend', `
+document.head.insertAdjacentHTML("beforeend", `
 <style>
 body::before {
 content: "";
@@ -588,20 +549,6 @@ opacity: .06;
 }
 // random bg image
 fuMBg(conf["confThemeEmbed"], conf["confBgImg"]);
-
-// fonts
-//document.head.insertAdjacentHTML("beforeend", `
-fuMInsertHtml("head", 'beforeend', `
-
-<style>
-@font-face {
-font-family: 'Roboto';
-src: url('${confD}fonts/Roboto-Regular.ttf')  format('truetype');
-font-display: swap;
-}
-</style>
-
-`);
 
 // CSS
 
@@ -638,7 +585,6 @@ conf["confDataCollection"] = 'on';
 }
 }
 
-//fuMInsertHtml('#fPrivacy', 'beforeend', `Cookie: auto (${conf["confDataCollection"]})`); 
 if (document.getElementById('fPrivacy') != null){
 document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${conf["confDataCollection"]})`;
 }

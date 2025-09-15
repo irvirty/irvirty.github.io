@@ -17,12 +17,6 @@ background-attachment: fixed;
 }
 }*/
 
-
-:root{
-/* .brand - link, accent color (red, orange, yellow, green, blue, indigo, violet) */
---brandColor: color-mix(in srgb, var(--c4) 50%, var(--blue));
-}
-
 .navMenu a,
 .navMenu2 a {
 border-bottom: 2px solid transparent;

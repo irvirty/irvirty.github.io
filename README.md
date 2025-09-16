@@ -1,8 +1,8 @@
 ![banner](/img/github-banner-settings.png)  
   
-# GitHub Page
+# irvirty.github.io
 
-Page with one picture (art, drawing).
+📄 Page with one picture (art, drawing).
   
 ---
    
@@ -11,7 +11,7 @@ Page with one picture (art, drawing).
 
 ---
   
-## License  
+## License:  
 • Main license: CC BY-SA 4.0  
 
 ---

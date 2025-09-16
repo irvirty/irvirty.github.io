@@ -2,7 +2,7 @@
   
 # irvirty.github.io
 
-• Page with one picture (art, drawing).
+Page with one picture (art, drawing).
   
 ---
    
@@ -12,7 +12,7 @@
 ---
   
 ## License:  
-• Main license: CC BY-SA 4.0  
+Main license: CC BY-SA 4.0  
 
 ---
    

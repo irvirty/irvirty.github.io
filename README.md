@@ -2,7 +2,7 @@
   
 # irvirty.github.io
 
-📄 Page with one picture (art, drawing).
+• Page with one picture (art, drawing).
   
 ---
    
@@ -16,7 +16,7 @@
 
 ---
    
-#### 🏷️ GitHub Explore, topics:  
+#### GitHub Explore, topics:  
 [Website](https://github.com/topics/website?s=updated),
 [Static Website ](https://github.com/topics/static-website?s=updated),
 [GitHub-pages](https://github.com/topics/github-pages?s=updated),

@@ -17,12 +17,12 @@ Main license: CC BY-SA 4.0
 ---
    
 #### GitHub Explore, topics:  
-[Website](https://github.com/topics/website?s=updated),
-[Static Website ](https://github.com/topics/static-website?s=updated),
-[GitHub-pages](https://github.com/topics/github-pages?s=updated),
-[HTML](https://github.com/topics/HTML?s=updated),
-[CSS](https://github.com/topics/CSS?s=updated),
-[JavaScript](https://github.com/topics/javascript?s=updated),
-[Open Source](https://github.com/topics/open-source?s=updated),
+[Website](https://github.com/topics/website),
+[Static Website ](https://github.com/topics/static-website),
+[GitHub-pages](https://github.com/topics/github-pages),
+[HTML](https://github.com/topics/HTML),
+[CSS](https://github.com/topics/CSS),
+[JavaScript](https://github.com/topics/javascript),
+[Open Source](https://github.com/topics/open-source),
 
 

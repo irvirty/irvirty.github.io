@@ -9,6 +9,24 @@ conf["confGoogleAnalyticsId"] = "G-RQJTJG7DF9";
 conf["confUsername"] = "irvirty"; // only in some places
 conf["confWebsiteUrl"] = "irvirty.github.io";
 
+conf["confCookieDesc"] = `
+- This is necessary to improve the site. (For Ads Services, Statistics).
+- Auto: Browser settings are used.
+- Site used Functionality cookies.
+- Some services still collect visit information if cookie off.
+
+- Other:
+<a class="brand inlineBlock padding" target="blank" href="https://www.google.com/policies/privacy/partners/">Google's Privacy & Terms</a>
+<a class="brand inlineBlock padding" target="blank" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#our-use-of-cookies-and-tracking-technologies">GitHub General Privacy Statement</a>
+`;
+
+conf["confCookieDescPopup"] = `
+Other:
+<a class="brand inlineBlock padding" target="blank" href="https://www.google.com/policies/privacy/partners/">Google's Privacy & Terms</a>
+<a class="brand inlineBlock padding" target="blank" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#our-use-of-cookies-and-tracking-technologies">GitHub General Privacy Statement</a>
+`;
+
+
 // wrapper size for navigation, number in px from your CSS
 conf["confWrapperNavWidth"] = 900;
 conf["confMenuItemAverageWidth"] = 120;
@@ -35,15 +53,7 @@ if (fuMComVar == undefined){ var fuMComVar = ""; }
 const confData = [
 {
 "confTitle":"Allow Cookies For Third Parties?",
-"confDescription":`- This is necessary to improve the site. (For Ads Services, Statistics).
-- Auto: Browser settings are used.
-- Site used Functionality cookies.
-- Some services still collect visit information if cookie off.
-
-Other:
-<a class="brand inlineBlock padding" target="blank" href="https://www.google.com/policies/privacy/partners/">Google's Privacy & Terms</a>
-<a class="brand inlineBlock padding" target="blank" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#our-use-of-cookies-and-tracking-technologies">GitHub General Privacy Statement</a><br>
-`,
+"confDescription":`${conf["confCookieDesc"]}`,
 "confName":"confDataCollection",
 "confValueDefault":"not selected",
 "confValueVariant":["on", "off", "auto", "not selected"],
@@ -80,6 +90,12 @@ if (navigator.userAgent.search("iPhone|Android|Mobile|Lumia|Phone") != -1){ conf
 if (navigator.userAgent.search("PlayStation|Xbox|TV|Roku|SmartTV|BRAVIA") != -1){ conf["confDevice"] = 'tv';  }
 if (conf["confDevice"] == 'none'){ conf["confDevice"] = 'pc'; }
 
+
+conf["confPrivacyLinks"] = `
+
+<a class="brand inlineBlock padding" target="blank" href="https://www.google.com/policies/privacy/partners/">Google's Privacy & Terms</a><br>
+<a class="brand inlineBlock padding" target="blank" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#our-use-of-cookies-and-tracking-technologies">GitHub General Privacy Statement</a><br>
+`;
 
 
 // fu sorting v.1.0.0
@@ -554,23 +570,14 @@ fuMBg(conf["confThemeEmbed"], conf["confBgImg"]);
 
 
 
-// Cookie (auto) v.2.0.0
-/*if (conf["confDataCollection"] == 'not selected'){
-if (navigator.doNotTrack == 1||navigator.globalPrivacyControl == true){
-conf["confDataCollection"] = "off";
-document.getElementById('fPrivacy').innerHTML = `Cookie: not selected (${conf["confDataCollection"]})`;
+// Cookie (auto) v.2.1.0
+if (document.getElementById('fPrivacy') != null){
+document.getElementById('fPrivacy').innerHTML = `Cookie: (${conf["confDataCollection"]})`;
 }
-}*/
 
 if (conf["confDataCollection"] == 'auto'){
 if (navigator.doNotTrack == 1||navigator.globalPrivacyControl == true){
 conf["confDataCollection"] = "off";
-}
-
-if (document.getElementById('fPrivacy') != null){
-document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${conf["confDataCollection"]})`;
-}
-
 }
 
 if (document.getElementById('fPrivacy') != null){

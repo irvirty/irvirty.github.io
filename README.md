@@ -8,14 +8,11 @@ Page with one picture (art, drawing).
    
 > [!IMPORTANT]
 > - The Google analytics ID is in the file "/js/main.js", it works if accept the cookie.  
-  
+
 ---
   
 ## License  
-```
-Main license: CC BY-SA 4.0.
-
-```
+• Main license: CC BY-SA 4.0  
 
 ---
    

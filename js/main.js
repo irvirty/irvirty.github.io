@@ -50,7 +50,7 @@ conf["confIdEmbedScript"] = "footer";
 
 if (fuMComVar == undefined){ var fuMComVar = ""; }
 
-const confData = [
+var confData = [
 {
 "confTitle":"Allow Cookies For Third Parties?",
 "confDescription":`${conf["confCookieDesc"]}`,
@@ -194,9 +194,9 @@ display: none !important;
 }
 
 // button
-const dropdownButton = document.getElementById("dropdownMenuButton");
-let dropdownMenu = document.getElementById("dropdownMenu");
-const topNav = document.getElementById("topNav");
+var dropdownButton = document.getElementById("dropdownMenuButton");
+var dropdownMenu = document.getElementById("dropdownMenu");
+var topNav = document.getElementById("topNav");
 
 //https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/examples/menu-button-links/
 if (topNav != undefined&&topNav.querySelectorAll("a")[0] != undefined){

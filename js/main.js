@@ -383,7 +383,7 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 <span class="op inlineBlock padding gray" title="update">2025</span>
 <br>
-<span class="gray">Hosting:</span> <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://pages.github.com/">GitHub Pages</a>
+<span class="gray">Powered by </span> <a class="brand inlineBlock padding" style="padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>
 
 </div>
 </nav>

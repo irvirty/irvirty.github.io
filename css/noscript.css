@@ -12,7 +12,7 @@ display: none;
 
 .topNav .dropdownMenuButton { display: inline; }
 
-/*.dropdownMenuContent:hover .dropdownMenu{ display: block; }*/
+/* .dropdownMenuContent:hover .dropdownMenu{ display: block; } */
 .dropdownMenuContent:hover {
 .dropdownMenu { display: block; }
 }

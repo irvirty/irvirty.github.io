@@ -7,8 +7,8 @@ Page with one picture (art, drawing).
 ---
    
 > [!IMPORTANT]
-> - The Google analytics ID is in the file "/js/main.js", it works if accept the cookie.  
-
+> - The Google analytics ID is in the file "/js/main.js", it works if accept the cookie (you can replace with your ID).  
+  
 ---
   
 ## License:  

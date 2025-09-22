@@ -10,7 +10,7 @@ conf["confUsername"] = "irvirty"; // only in some places
 conf["confWebsiteUrl"] = "irvirty.github.io";
 
 conf["confCookieDesc"] = `
-- This is necessary to improve the site. (For Ads Services, Statistics).
+- This is necessary to improve the site. (for ads services, statistics).
 - Auto: Browser settings are used.
 - Site used Functionality cookies.
 - Some services still collect visit information if cookie off.

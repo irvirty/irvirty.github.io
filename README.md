@@ -13,8 +13,12 @@ Page with one picture (art, drawing).
   
 ## License:  
 Main license: CC BY-SA 4.0  
-
----
+  
+---  
+  
+[Download ZIP](https://github.com/irvirty/irvirty.github.io/archive/refs/heads/main.zip)
+  
+---  
    
 #### GitHub Explore, topics:  
 [Website](https://github.com/topics/website),

@@ -370,23 +370,25 @@ document.getElementById("footer").innerHTML = `
 -->
 
 <a class="brand inlineBlock padding" title="About" href="${confD}pages/about/" style="padding-left: 0;">About</a>
-<span class="op gray">|</span>
+
 <a class="brand inlineBlock padding" title="Social" href="https://bsky.app/profile/${conf["confUsername"]}.pages.dev">Bluesky</a>
-<span class="op gray">|</span>
+
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <!--<a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="${confD}pages/settings/">Settings</a>-->
-<span class="op gray inlineBlock padding">|</span>
+
+<span class="op inlineBlock padding gray" style="padding-left: 0";></span>
 <span class="gray">License:</span>
 <a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-<span class="op gray">|</span>
+ 
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
-<span class="op inlineBlock padding gray">|</span>
-<span class="op gray" title="update">2025</span>
-<span class="op inlineBlock padding gray">|</span>
+
+<span class="op nlineBlock padding gray" style="padding-left: 0";></span>
 <span class="gray">Powered by </span> <a class="brand inlineBlock padding" style="padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>
 
 </div>
 </nav>
+
+<!-- First created: 2025 -->
 
 `;
 }

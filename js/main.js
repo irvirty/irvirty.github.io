@@ -391,7 +391,7 @@ document.getElementById("footer").innerHTML = `
 <span class="op inlineBlock padding gray" title="update">2025</span>
 <span class="op gray">|</span>
 
-<span class="gray inlineBlock padding" style="padding-right: 0;">Powered by </span> <a class="brand inlineBlock padding" style="padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>
+<span class="gray inlineBlock padding" style="padding-right: 0;">Powered by </span> <a class="brand inlineBlock padding" style="padding-left: 0; padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>
 
 </div>
 </nav>
@@ -500,6 +500,9 @@ return text = text.split("SYMBOLFORSPLIT");
 // CSS
 // random bg image (background img with random position)
 
+function fuMBg(com, bgImage){
+if (conf["confBg"] == "on"){
+
 // fix bg
 if (conf["confThemeEmbed"] == undefined){
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -509,9 +512,6 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matc
 conf["confThemeEmbed"] = "light";
 }
 }
-
-function fuMBg(com, bgImage){
-if (conf["confBg"] == "on"){
 
 bgImage = fuMClearText(bgImage);
 

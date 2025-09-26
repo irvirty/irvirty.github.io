@@ -52,18 +52,18 @@ if (fuMComVar == undefined){ var fuMComVar = ""; }
 
 var confData = [
 {
-"confTitle":"Allow Cookies For Third Parties?",
-"confDescription":`${conf["confCookieDesc"]}`,
-"confName":"confDataCollection",
-"confValueDefault":"not selected",
-"confValueVariant":["on", "off", "auto", "not selected"],
-},
-{
 "confTitle":"Background picture",
 "confDescription":"Background picture.",
 "confName":"confBg",
 "confValueDefault":"on",
 "confValueVariant":["on", "off"],
+},
+{
+"confTitle":"Allow Cookies For Third Parties?",
+"confDescription":`${conf["confCookieDesc"]}`,
+"confName":"confDataCollection",
+"confValueDefault":"not selected",
+"confValueVariant":["on", "off", "auto", "not selected"],
 },
 ];
 
@@ -427,7 +427,10 @@ if(fuMComVar.indexOf('footer off') != -1){ document.getElementById("footer").inn
 
 
 
-function fuMReload(){ location.reload(true); }
+function fuMReload(){
+window.location.hash = "";
+location.reload(true);
+}
 
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random

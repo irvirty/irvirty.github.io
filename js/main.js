@@ -388,7 +388,7 @@ document.getElementById("footer").innerHTML = `
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <span class="op gray">|</span>
 
-<span class="op inlineBlock padding gray" title="update"><!--2024-->2025</span>
+<span class="op inlineBlock padding gray" title="update">2025</span>
 <span class="op gray">|</span>
 
 <span class="gray inlineBlock padding" style="padding-right: 0;">Powered by </span> <a class="brand inlineBlock padding" style="padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>

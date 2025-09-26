@@ -376,14 +376,14 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <!--<a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="${confD}pages/settings/">Settings</a>-->
 
-<span class="op inlineBlock padding gray" style="padding-left: 0";></span>
-<span class="gray">License:</span>
+<span class="gray inlineBlock padding" style="padding-right: 0;">License:</span>
 <a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
  
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 
-<span class="op nlineBlock padding gray" style="padding-left: 0";></span>
-<span class="gray">Powered by </span> <a class="brand inlineBlock padding" style="padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>
+<span class="op inlineBlock padding gray" title="update"><!--2024-->2025</span>
+
+<span class="gray inlineBlock padding" style="padding-right: 0;">Powered by </span> <a class="brand inlineBlock padding" style="padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>
 
 </div>
 </nav>

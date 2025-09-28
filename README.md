@@ -24,7 +24,6 @@ Main license: CC BY-SA 4.0
    
 ## GitHub Explore, topics:  
 [Website](https://github.com/topics/website),
-[Static Website ](https://github.com/topics/static-website),
 [GitHub-pages](https://github.com/topics/github-pages),
 [HTML](https://github.com/topics/HTML),
 [CSS](https://github.com/topics/CSS),

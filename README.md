@@ -16,20 +16,21 @@ Page with one picture (art, drawing).
 ## License:  
 Main license: CC BY-SA 4.0  
   
----  
+---
   
 ## Download:
   
 [Download ZIP](https://github.com/irvirty/irvirty.github.io/archive/refs/heads/main.zip)
   
----  
+<!--
+---
    
 ## GitHub Explore, topics:  
 [Website](https://github.com/topics/website),
-[GitHub pages](https://github.com/topics/github-pages),
+[GitHub Pages](https://github.com/topics/github-pages),
 [HTML](https://github.com/topics/HTML),
 [CSS](https://github.com/topics/CSS),
 [JavaScript](https://github.com/topics/javascript),
-[Open source](https://github.com/topics/open-source),
-
+[Open Source](https://github.com/topics/open-source),
+-->
 

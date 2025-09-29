@@ -26,10 +26,10 @@ Main license: CC BY-SA 4.0
    
 ## GitHub Explore, topics:  
 [Website](https://github.com/topics/website),
-[GitHub-pages](https://github.com/topics/github-pages),
+[GitHub pages](https://github.com/topics/github-pages),
 [HTML](https://github.com/topics/HTML),
 [CSS](https://github.com/topics/CSS),
 [JavaScript](https://github.com/topics/javascript),
-[Open Source](https://github.com/topics/open-source),
+[Open source](https://github.com/topics/open-source),
 
 

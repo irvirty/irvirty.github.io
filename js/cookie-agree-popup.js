@@ -4,6 +4,7 @@
 
 if(String(document.location).indexOf("file://") == -1){
 
+onload = (event) => {
 if (document.getElementById("cookiePopup") != null){
 document.getElementById("cookiePopup").innerHTML = `
 
@@ -65,6 +66,9 @@ width: var(--fontSize);
 </style>
 
 `);
+}
+
+
 
 if(conf["confDataCollection"] == 'not selected'){
 if(document.getElementById("cookiePopup") != null){

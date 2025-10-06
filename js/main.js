@@ -500,8 +500,7 @@ return text = text.split("SYMBOLFORSPLIT");
 
 
 
-// CSS
-// random bg image (background img with random position)
+// Random bg image CSS (background img with random position)
 
 function fuMBg(com, bgImage){
 if (conf["confBg"] == "on"){
@@ -519,8 +518,8 @@ conf["confThemeEmbed"] = "light";
 bgImage = fuMClearText(bgImage);
 
 if (bgImage == undefined||bgImage == null||bgImage == ""){
-let mBg = fuMRandomItem("circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
-let mBgDark = fuMRandomItem("circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
+let mBg = fuMRandomItem("index.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
+let mBgDark = fuMRandomItem("index-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 if (conf["confThemeEmbed"] == 'light'||com == "light"){
@@ -586,10 +585,10 @@ opacity: .06;
 
 }
 }
-// random bg image
+// 
 fuMBg(conf["confThemeEmbed"], conf["confBgImg"]);
 
-// CSS
+// Random bg image CSS
 
 
 

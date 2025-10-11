@@ -1,7 +1,6 @@
 // Cookie Consent Popup v.2.0.0
 // if "not selected": popup
 
-
 if(String(document.location).indexOf("file://") == -1){
 
 onload = (event) => {

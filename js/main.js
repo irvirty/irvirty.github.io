@@ -7,6 +7,7 @@ var conf = [];
 
 conf["confGoogleAnalyticsId"] = "G-RQJTJG7DF9";
 conf["confUsername"] = "irvirty"; // only in some places
+conf["confUsernameUpper"] = fuMCapitalizeFirstLetter(conf["confUsername"]);
 conf["confWebsiteUrl"] = "irvirty.github.io";
 
 conf["confCookieDesc"] = `
@@ -63,7 +64,7 @@ var confData = [
 "confDescription":`${conf["confCookieDesc"]}`,
 "confName":"confDataCollection",
 "confValueDefault":"not selected",
-"confValueVariant":["on", "off", "auto", "not selected"],
+"confValueVariant":["on", "off", "auto", "not selected", "allow embed"],
 },
 ];
 
@@ -97,6 +98,10 @@ conf["confPrivacyLinks"] = `
 <a class="brand inlineBlock padding" target="blank" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#our-use-of-cookies-and-tracking-technologies">GitHub General Privacy Statement</a><br>
 `;
 
+//https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
+function fuMCapitalizeFirstLetter(val) {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
 
 // fu sorting v.1.0.0
 function fuMSort(textOrArr, delimiter, mode){
@@ -345,16 +350,17 @@ document.getElementById("footer").innerHTML = `
 <nav>
 <div class="margin2List small tCenter">
 
-<div class="wrapper2">
+<div class="wrapper3">
 
 <!--
+<div class="wrapper3">
 <div class="wrapperSmall right">
 <details class="op">
 <div id="fDesc" class="block pre tLeft padding2 bg shadow light borderRadius2 margin2List w100" style="margin-left: 0; margin-right: 0;">${fDesc}</div>
 <summary class="pointer paddingList marginList brand" title="Description and keywords">${fDescTitle}</summary>
 </details>
 </div>
-
+</div>
 
 <div class="small tLeft">
 <span class="gray">nav:</span> <span id="footerNav"></span><hr>
@@ -381,17 +387,14 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <span class="op gray">|</span>
 
-<span class="gray inlineBlock padding" style="padding-right: 0;">License:</span>
-<a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-<span class="op gray">|</span>
-
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <span class="op gray">|</span>
 
-<span class="op inlineBlock padding gray" title="update">2025</span>
+<span class="op inlineBlock padding" style="padding-right: 0;" title="update"><!--2024-->© 2025 ${conf["confUsernameUpper"]} License:</span> 
+<a class="brand inlineBlock padding" style="padding-left: 0;" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 <span class="op gray">|</span>
 
-<span class="gray inlineBlock padding" style="padding-right: 0;">Powered by </span> <a class="brand inlineBlock padding" style="padding-left: 0; padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>
+<span class="op inlineBlock padding" style="padding-right: 0;">Powered by </span> <a class="brand inlineBlock padding" style="padding-left: 0; padding-right: 0;"  href="https://pages.github.com/">GitHub Pages</a>
 
 </div>
 </nav>
@@ -592,13 +595,13 @@ fuMBg(conf["confThemeEmbed"], conf["confBgImg"]);
 
 
 
-// Cookie (auto) v.2.1.0
+// Cookie (auto) v.2.2.0
 if (document.getElementById('fPrivacy') != null){
 document.getElementById('fPrivacy').innerHTML = `Cookie: (${conf["confDataCollection"]})`;
 }
 
 if (conf["confDataCollection"] == 'auto'){
-if (navigator.doNotTrack == 1||navigator.globalPrivacyControl == true){
+if (fuMBrowserDoNotShareDataConfig() == "on"){
 conf["confDataCollection"] = "off";
 }
 
@@ -607,6 +610,31 @@ document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${conf["confDataC
 }
 
 }
+
+
+//conf["confDataCollection"] conf["confEmbedBlockMsg"]
+conf["confEmbedBlockMsg"] = `<div class="tCenter padding bg border small borderRadius">Embedding is disabled. <a id="fPrivacy" class="underline brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie settings</a></div>`;
+
+
+if (conf["confDataCollection"] != "allow embed"){
+//conf["confDataCollection"] conf["confEmbedBlockMsg"]
+if (conf["confDataCollection"] != "on"){
+if (document.getElementById("disableEmbedMsg") != null){
+document.getElementById("disableEmbedMsg").innerHTML = conf["confEmbedBlockMsg"];
+}
+}
+}
+
+
+function fuMBrowserDoNotShareDataConfig(){
+if (navigator.doNotTrack == 1||navigator.globalPrivacyControl == true){
+return "on";
+} else {
+return "of";
+}
+}
+//alert(fuMBrowserDoNotShareDataConfig());
+
 // end Cookie (auto)
 
 
@@ -676,9 +704,24 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 // embed and run
 
+// Cookie popup
 if (conf["confDataCollection"] == 'not selected'){
-fuMEmbedScript(`${confD}js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
+/*
+if (fuMBrowserDoNotShareDataConfig() == "on"){
+localStorage.setItem("confDataCollection", "off");
+conf["confDataCollection"] = "off";
+
+if (document.getElementById('fPrivacy') != null){
+document.getElementById('fPrivacy').innerHTML = `Cookie: (${conf["confDataCollection"]})`;
 }
+
+} else {
+fuMEmbedScript(confD + `js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
+}*/
+fuMEmbedScript(confD + `js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
+}
+// end Cookie popup
+
 
 if (conf["confDataCollection"] == 'on'){
 fuMEmbedScript(`https://www.googletagmanager.com/gtag/js?id=${conf["confGoogleAnalyticsId"]}`, conf["confIdEmbedScript"]);

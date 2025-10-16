@@ -23,6 +23,7 @@ border-bottom: 2px solid transparent;
 }
 .navMenu a:hover,
 .navMenu2 a:hover {
+transition: 0.3s;
 border-bottom: 2px dotted var(--brand);
 }
 .navMenuActive {

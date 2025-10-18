@@ -14,7 +14,7 @@ Page with one picture (art, drawing).
 ---
   
 ## License:  
-Main license: CC BY-SA 4.0  
+Main: Copyright 2025 Irvirty CC BY-SA 4.0  
   
 ---
   

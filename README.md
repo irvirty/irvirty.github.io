@@ -1,8 +1,8 @@
+# irvirty.github.io
+
 
 <!--https://stackoverflow.com/questions/61071158/add-image-with-link-in-githubs-readme-md#-->
-[![banner](/img/github-banner-settings.png)](/img/screenshot.png) 
-  
-# irvirty.github.io
+[![banner](/img/github-banner-settings.png)](/img/screenshot.png)  
 
 Page with one picture (art, drawing).
   

@@ -33,7 +33,7 @@ conf["confWrapperNavWidth"] = 900;
 conf["confMenuItemAverageWidth"] = 120;
 conf["confMenuItemAverageWidth"] = 70;
 
-conf["confDomainNameInTitleStatus"] = "off"; // on, off
+conf["confDomainNameInTitleStatus"] = "on"; // on, off
 conf["confDomainName"] = String((location.hostname).split('.')[0]);
 if (conf["confDomainName"][0] != undefined){
 conf["confDomainName"] = conf["confDomainName"][0].toUpperCase() + conf["confDomainName"].slice(1);

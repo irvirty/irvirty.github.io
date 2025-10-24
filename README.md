@@ -26,5 +26,5 @@ Main: Copyright 2025 Irvirty CC BY-SA 4.0
   
 <!--
 Tags backup:
-javascript, css, html, github-pages, website,
+javascript, css, html, github-pages, website,  static-site,
 -->

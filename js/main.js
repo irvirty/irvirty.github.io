@@ -381,6 +381,9 @@ document.getElementById("footer").innerHTML = `
 <a id="fSettings" class="brand inlineBlock padding" title="Settings" href="${confD}pages/settings/">Settings</a>
 <span class="op gray">|</span>
 
+<a class="brand inlineBlock padding" title="Social network" href="https://bsky.app/profile/${conf["confUsername"]}.pages.dev">Bluesky</a>
+<span class="op gray">|</span>
+
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <span class="op gray">|</span>
 

@@ -33,12 +33,7 @@ conf["confWrapperNavWidth"] = 900;
 conf["confMenuItemAverageWidth"] = 120;
 conf["confMenuItemAverageWidth"] = 70;
 
-conf["confDomainNameInTitleStatus"] = "on"; // on, off
-conf["confDomainName"] = String((location.hostname).split('.')[0]);
-if (conf["confDomainName"][0] != undefined){
-conf["confDomainName"] = conf["confDomainName"][0].toUpperCase() + conf["confDomainName"].slice(1);
-} else { conf["confDomainName"] = ''; }
-conf["confDomainNameInTitle"] = ' / ' + conf["confDomainName"];
+conf["confUserNameInTitleStatus"] = "on"; // on, off
 
 
 //IndexedDB, DB list for clear (comma)
@@ -124,10 +119,10 @@ return textOrArr.sort(collator.compare);
 //alert(fuMSort(["772", " 3",  "6",  "7", "77"], "", "arr"));
 
 
-// domain name in titile
-if (conf["confDomainNameInTitleStatus"] == 'on'&&String(window.location.pathname) != "/"){
+// user name in titile
+if (conf["confUserNameInTitleStatus"] == "on"){
 if (document.getElementsByTagName('title')[0] != null){
-document.getElementsByTagName('title')[0].innerHTML += conf["confDomainNameInTitle"];
+document.getElementsByTagName('title')[0].innerHTML += ' / ' + conf["confUsernameUpper"];
 }
 }
 

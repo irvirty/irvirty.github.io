@@ -14,7 +14,7 @@
 ---
   
 ## 🧾 License:  
-Main: Copyright 2025 Irvirty CC BY-SA 4.0  
+Main: © 2025 Irvirty, license: CC BY-SA 4.0   
   
 ---
   

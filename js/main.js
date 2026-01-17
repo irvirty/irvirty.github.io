@@ -388,7 +388,7 @@ document.getElementById("footer").innerHTML = `
 
 <br>
 
-<span class="op inlineBlock padding" style="padding-right: 0; padding-left: 0;" title="update"><!--2025-->© 2026 ${conf["confUsernameUpper"]} License:</span> 
+<span class="op inlineBlock padding" style="padding-right: 0; padding-left: 0;" title="update"><!--2025-->© 2026 ${conf["confUsernameUpper"]}, License:</span> 
 <a class="brand inlineBlock padding" style="padding-left: 0;" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 <span class="op gray">|</span>
 

@@ -518,7 +518,7 @@ conf["confThemeEmbed"] = "light";
 
 bgImage = fuMClearText(bgImage);
 
-if (bgImage == undefined||bgImage == null||bgImage == ""){
+if (bgImage == undefined||bgImage == "undefined"||bgImage == null||bgImage == ""){
 let mBg = fuMRandomItem("index.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
 let mBgDark = fuMRandomItem("index-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
 let mRandBgPos = fuMRandom(0, 100);

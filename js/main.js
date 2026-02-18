@@ -378,7 +378,7 @@ document.getElementById("footer").innerHTML = `
 <a id="fSettings" class="brand inlineBlock padding" title="Settings" href="${confD}pages/settings/">Settings</a>
 <span class="op gray">|</span>
 
-<a class="brand inlineBlock padding" title="Social network" href="https://www.tumblr.com/${conf["confUsername"]}">Tumblr</a>
+<a class="brand inlineBlock padding" title="Social network" href="https://${conf["confUsername"]}.tumblr.com/">Tumblr</a>
 <span class="op gray">|</span>
 
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>

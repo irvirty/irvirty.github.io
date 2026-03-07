@@ -375,7 +375,7 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About" href="${confD}pages/about/">About</a>
 <span class="op gray">|</span>
 
-<a class="brand inlineBlock padding" title="Social network" href="https://${conf["confUsername"]}.wordpress.com/">WordPress</a>
+<a class="brand inlineBlock padding" title="Social network" href="https://${conf["confUsername"]}.wordpress.com/">WP Blog</a>
 <span class="op gray">|</span>
 
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>

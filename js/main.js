@@ -5,7 +5,7 @@ if (confD == undefined) { var confD = "/"; }
 // Settings, config
 var conf = [];
 
-conf["confGoogleAnalyticsId"] = "G-RQJTJG7DF9";
+conf["confGoogleAnalyticsId"] = "G-8TY3WT77QH";
 conf["confUsername"] = "irvirty"; // only in some places
 conf["confUsernameUpper"] = fuMCapitalizeFirstLetter(conf["confUsername"]);
 conf["confWebsiteUrl"] = "irvirty.github.io";

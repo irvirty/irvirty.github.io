@@ -4,5 +4,5 @@
 /* fix Disqus background color and Twitter border */
 /*https://stackoverflow.com/questions/65260505/disqus-iframe-transparency-wont-work-on-chrome-87#*/
 iframe {
-color-scheme: light;
+color-scheme: unset;
 }

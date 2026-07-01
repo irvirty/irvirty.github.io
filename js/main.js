@@ -375,7 +375,7 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About" href="${confD}pages/about/">About</a>
 <span class="op gray">|</span>
 
-<a class="brand inlineBlock padding" title="Social network" href="https://bsky.app/profile/${conf["confUsername"]}.is-local.org">Bluesky</a>
+<a class="brand inlineBlock padding" title="Social network" href="https://nostter.app/npub17ha3jmkrz767kgda656ql6qqquzvm0ath2872mxaa6547w4gcvys8eu8th">Nostr</a>
 <span class="op gray">|</span>
 
 <a id="fSettings" class="brand inlineBlock padding" title="Settings" href="${confD}pages/settings/">Settings</a>
